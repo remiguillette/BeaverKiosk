@@ -1,9 +1,11 @@
 import React from "react";
 import { View, Text, Button } from "@nodegui/react-nodegui";
 
+const Container = View as unknown as React.ComponentType<any>;
+
 export default function App() {
   return (
-    <View
+    <Container
       style={`
         flex: 1;
         align-items: center;
@@ -18,6 +20,6 @@ export default function App() {
         text="Cliquez-moi"
         on={{ clicked: () => console.log("Bouton cliqué !") }}
       />
-    </View>
+    </Container>
   );
 }
