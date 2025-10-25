@@ -11,7 +11,7 @@ win.resize(400, 300);
 const centralWidget = new QWidget();
 win.setCentralWidget(centralWidget);
 
-Renderer.render(<App />, centralWidget);
+Renderer.render(<App >, centralWidget);
 
 win.show();
 (global as any).win = win; // Empêche le GC de fermer la fenêtre
